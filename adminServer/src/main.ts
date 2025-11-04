@@ -11,7 +11,8 @@ async function bootstrap() {
 
   // ✅ CORS Configuration (IMPORTANT FIX)
   app.enableCors({
-    origin: 'http://localhost:3000', // your React app's origin
+    // origin: 'http://localhost:3000', // your React app's origin
+    origin: 'https://tms-new-olive.vercel.app', // your React app's origin
     credentials: true,               // allow cookies or Authorization headers
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
